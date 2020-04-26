@@ -174,7 +174,7 @@ class AccemblerArithmetic {
     let result = this.level5();
     if (this.token === '^') {
       this.getToken();
-      const hold = this.level4();
+      const hold = this.level2();
       result = this.arith('^', result, hold);
     }
     return result;
