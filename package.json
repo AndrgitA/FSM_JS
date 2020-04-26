@@ -1,0 +1,15 @@
+{
+  "name": "lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "builds": "npm run build_arith && npm run build_machine && npm run build_steps",
+    "build_arith": "pkg ArithmeticOperations/index.js --targets=win,linux,macos --output ./ArithmeticOperations/build/app",
+    "build_machine": "pkg MachineTuring/index.js --targets=win,linux,macos --output ./MachineTuring/build/app",
+    "build_steps": "pkg SmallSteps/index.js --targets=win,linux,macos --output ./SmallSteps/build/app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AndrgitA",
+  "license": "ISC"
+}
